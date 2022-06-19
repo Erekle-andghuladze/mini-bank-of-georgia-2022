@@ -1,10 +1,16 @@
 <div class="left-sidebar">
   <div class="left-sidebar__user-section">
-    <!-- TODO: Show User's name and picture here -->
+    <div class="user">
+      <div class="user_image">
+        <img [src]="curUser?.image" alt="user-image">
+      </div>
+      <div class="user_name">{{ curUser?.name }}</div>
+    </div>
+    <div class="user-username">{{ curUser?.username }}</div>
   </div>
   <ul class="left-sidebar__pages-section">
     <li>
-      <a href="#">
+      <a routerLink="/bpm/bpm000">
         <i class="home icon"></i>
         <span>მთავარი</span>
       </a>
